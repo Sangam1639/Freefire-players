@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);width: 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    flex-wrap: wrap;
+    height: 60px;
+    background: linear-gradient(to left, #000000, #152331); 
+    justify-items: end;
+    align-content: center;
+}
+
+.navbar nav {
+    flex-wrap: wrap;
+    margin-right: 50px;
+    display: flex;
+    gap: 50px;
+    color: white;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nagi {
+    margin-top: 30px;
+    justify-items: center;
+}
+
+.information {
+    background-color: black;
+    color: white;
+    height: 400px;
+    width: 220px;
+
+    border-radius: 12px;
+    box-shadow: 0px 0px 25px rgba(50, 40, 200, 1);
+}
+
+.stats-id {
+    display: flex;
+    flex-direction: column;
+}
+
+.nagi-id img {
+    margin: 10px;
+    width: 90%;
+}
+
+.stats-table {
+    font-size: 10px;
+}
+
+.stats-table span {
+    color: red;
+    margin: 8px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.squadbr {
+    margin: 6px 0px 8px 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.customcs {
+    margin: 6px 0px 0px 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+}
+
+.contact-card {
+    margin-top: 20px;
+    padding: 5px;
+    justify-self: center;
+    width: 200px;
+    height: 120px;
+    background: rgb(27, 27, 80);
+
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.span {
+    color: rgb(7, 107, 213);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande' ;
+}
+
+.uid {
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+    display: flex;
+    gap: 50px;
+}
+
+#uid {
+    color: red;
+}
+
+#uid2 {
+    color: white;
+}
+
+#req {
+    color: grey;
+    display: flex;
+    margin-top: 10px;
+    justify-self: center;
+}
+
+.insta a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#logo {
+    color: rgb(188, 54, 76);
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+/* ================================
+   PHONE RESPONSIVE CSS
+   ADD THIS AT THE VERY BOTTOM
+   ================================ */
+
+@media (max-width: 600px) {
+  /* Header */
+  .header {
+    height: auto;
+    min-height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    justify-items: center;
+    align-content: center;
+    padding: 10px 0;
+  }
+
+  /* Navbar */
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar nav {
+    margin-right: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .navbar nav a {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}

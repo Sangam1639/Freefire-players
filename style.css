@@ -1,0 +1,301 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  width: 100%;
+  height: 100%;
+  width: 100vw;
+}
+
+.header {
+  flex-wrap: wrap;
+  height: 60px;
+  background: linear-gradient(to left, #000000, #152331);
+  justify-items: end;
+  align-content: center;
+
+  width: 100%;
+  position: fixed;
+}
+
+.navbar nav {
+  flex-wrap: wrap;
+  margin-right: 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.home-content {
+  padding-top: 90px;
+}
+
+.topic span {
+  color: white;
+  margin-left: 30px;
+  padding: 15px 15px 15px 15px;
+  background: rgb(18, 47, 50);
+  border-radius: 8px;
+
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.card-grid {
+  margin-top: 30px;
+  margin-right: 20px;
+
+  justify-items: center;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 75px;
+
+  flex-wrap: wrap;
+}
+
+.item-card {
+  background: rgb(5, 6, 45);
+  width: 200px;
+  height: 350px;
+  border-radius: 25px;
+  border: none;
+
+  justify-items: center;
+
+  transition: 0.3s;
+
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img img {
+  width: 200px;
+  border-radius: 24px 24px 0px 0px;
+}
+
+.card-detail {
+  margin-top: 10px;
+}
+
+.item-card .card-detail span {
+  margin-left: 5px;
+  padding: 2px 10px 2px 10px;
+  font-size: 20px;
+  color: red;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: black;
+  border-radius: 7px;
+}
+
+.item-card .card-detail p {
+  padding: 7px 9px 10px 9px;
+  font-size: 14px;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: none;
+}
+
+.view-button button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background: goldenrod;
+  color: white;
+  font-size: 17px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 50px;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.more-soon {
+  color: gold;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  display: flex;
+  gap: 10px;
+
+  height: 30px;
+
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+footer .more {
+  color: white;
+  background: blue;
+  width: 70px;
+  height: 30px;
+
+  border-radius: 20px;
+
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+
+  align-content: center;
+}
+
+
+
+/* ================================
+   PHONE RESPONSIVE CSS
+   ADD THIS AT THE VERY BOTTOM
+   ================================ */
+
+@media (max-width: 600px) {
+  /* Header */
+  .header {
+    height: auto;
+    min-height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    justify-items: center;
+    align-content: center;
+    padding: 10px 0;
+  }
+
+  /* Navbar */
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar nav {
+    margin-right: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .navbar nav a {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  /* Content below fixed navbar */
+  .home-content {
+    padding-top: 100px;
+  }
+
+  /* Players title */
+  .topic {
+    text-align: center;
+  }
+
+  .topic span {
+    display: inline-block;
+    margin-left: 0;
+    padding: 10px 15px;
+  }
+
+  /* Cards */
+  .card-grid {
+    margin: 30px 0 0 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows: none;
+
+    gap: 40px;
+
+    justify-items: center;
+  }
+
+  /* Individual card */
+  .item-card {
+    width: 200px;
+    height: 350px;
+
+    margin: 0 auto;
+  }
+
+  /* Card image */
+  .card-img img {
+    width: 200px;
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Card text */
+  .item-card .card-detail p {
+    font-size: 13px;
+  }
+
+  /* View button */
+  .view-button {
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .more-soon {
+    width: 100%;
+    gap: 8px;
+    font-size: 14px;
+  }
+}
+
+/* Smaller phones */
+@media (max-width: 380px) {
+  .navbar nav {
+    gap: 12px;
+  }
+
+  .navbar nav a {
+    font-size: 12px;
+  }
+
+  .home-content {
+    padding-top: 105px;
+  }
+
+  .card-grid {
+    gap: 35px;
+  }
+}
